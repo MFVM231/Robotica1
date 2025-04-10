@@ -47,7 +47,6 @@ dist/
 *.vrb
 *.dvi
 *.ps
-*.pdf
 *.xdv
 *.acn
 *.acr
