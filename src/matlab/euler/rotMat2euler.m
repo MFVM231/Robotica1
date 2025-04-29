@@ -15,4 +15,3 @@ if secuencia == "XYZ"
     psi =   atan2(-R(1,2), R(1,1));    % psi:   rotación alrededor del eje Z
     euler = [phi; theta; psi];
 end
-
