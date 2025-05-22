@@ -32,13 +32,13 @@ robot = crear_robot(dh,A0);
 % *Trayectoria cartesiana del robot*
 
 p = readtable("datos\trayectorias\cargar_trayectoria_1.csv");
-n = length(p.x___x);
+n = length(p.x);
 % R_puntos = zeros(3,3,n);
 % for i = 1:n
 %     euler_puntos = deg2rad([p.phi(i);p.theta(i);p.psi(i)]);
 %     R_puntos(:,:,i) = euler2rotMat(euler_puntos,secuencia);
 % end
-pos_puntos = [p.x___x';p.y';p.z'];
+pos_puntos = [p.x';p.y';p.z'];
 % z_puntos = R_puntos(:,3,:);
  
 %% *Cinemática inversa de los puntos*
