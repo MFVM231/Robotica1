@@ -66,6 +66,9 @@ devel/
 *.lof
 *.lot
 *.lol
+*/_minted/
+*/build/
+
 
 # Archivos de backup o temporales
 *~
