@@ -11,7 +11,7 @@ def callback2(pose):
 def leer_pose():
     rospy.init_node('leer_pose', anonymous=True)
     rospy.Subscriber('/turtle1/pose', Pose, callback1)
-    rospy.Subscriber('/turtle2/pose', Pose, callback2)  # Corrección aquí
+    rospy.Subscriber('/Tortuga2/pose', Pose, callback2)  # Corrección aquí
     rospy.spin()
 
 if __name__ == '__main__':

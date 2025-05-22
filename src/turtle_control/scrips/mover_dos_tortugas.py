@@ -7,13 +7,13 @@ def mover_dos_tortugas():
 
     # Publicadores para ambas tortugas
     pub1 = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
-    pub2 = rospy.Publisher('/Tortuga2/cmd_vel', Twist, queue_size=10)
+    pub2 = rospy.Publisher('/Tortuga2/cmd_vel', Twist, queue_size=10) 
 
     rate = rospy.Rate(10)  # 10 Hz
     inicio = rospy.get_time()
 
     while not rospy.is_shutdown():
-        tiempo = (rospy.get_time() - inicio) % 4  # ciclo de 4 segundos
+        tiempo = (rospy.get_time() - inicio) % 4  # ciclo de 2 segundos
 
         cmd = Twist()
         if tiempo < 2:
@@ -22,7 +22,7 @@ def mover_dos_tortugas():
             cmd.angular.z = 0.0
         else:
             # Fase de giro
-            cmd.linear.x = 0.0
+            cmd.linear.x = 3.0
             cmd.angular.z = 1.5
 
         pub1.publish(cmd)
@@ -34,3 +34,4 @@ if __name__ == '__main__':
         mover_dos_tortugas()
     except rospy.ROSInterruptException:
         pass
+
