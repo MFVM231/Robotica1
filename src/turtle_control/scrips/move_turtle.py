@@ -21,7 +21,7 @@ def mover_tortuga():
             cmd.angular.z = 0.0
         else:
             # Fase de giro (2 segundos)
-            cmd.linear.x = 0.0
+            cmd.linear.x = 0.5
             cmd.angular.z = 1.5
 
         pub.publish(cmd)
