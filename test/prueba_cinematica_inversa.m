@@ -26,7 +26,7 @@ A0 = [R_inicial  p_robot
 %% 
 % *Crear estructura del robot en base a la tabla DH y los valores iniciales*
 
-dh = readtable('datos\tabla_DH\robot1.csv');
+dh = readtable('datos\tabla_DH\robot4.csv');
 robot = crear_robot(dh,A0);
 %% 
 % *Trayectoria cartesiana del robot*
@@ -70,7 +70,7 @@ end
 delta_q = abs(q_sol(:,2) - q_sol(:,1));
 % Usar el valor más alto de los tiempos mínimos requeridos para cada junta,
 % de forma que siempre sea un perfil triangular.
-t_final = max(2 * delta_q ./ robot.dqMax);
+t_final = max(2 * delta_q ./ robot.dqMax);  
 % Muestras para graficar trayectoria
 numSamples = 201;
 
@@ -96,7 +96,7 @@ g = crear_grafica_robot();
 %% 
 % *Generar el nombre del archivo con fecha y hora actual*
 
-nombre_video = sprintf('resultados/animaciones/cinematica_directa_robot1_%s.avi', datestr(now, 'yyyy-mm-dd_HH-MM-SS'));
+nombre_video = sprintf('resultados/animaciones/cinematica_directa_robot4_%s.avi', datestr(now, 'yyyy-mm-dd_HH-MM-SS'));
 %% 
 % *Comenta las siguientes lineas si no quieres generar el video*
 
