@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robot Armel bueno">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00143124852362658 0.00144768706616355 0.0390674660224859"
+        rpy="0 0 0" />
+      <mass
+        value="15.5251833116931" />
+      <inertia
+        ixx="0.0974415680905807"
+        ixy="-0.00215958592945114"
+        ixz="0.000103511004452389"
+        iyy="0.0974898978613808"
+        iyz="-9.73687130849487E-05"
+        izz="0.178292945398034" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.0569765063353773 0.00270673982910415 0.166849893780178"
+        rpy="0 0 0" />
+      <mass
+        value="6.22055201842844" />
+      <inertia
+        ixx="0.032143026138401"
+        ixy="-0.00124090972695475"
+        ixz="-0.0244216094592873"
+        iyy="0.0639994149884094"
+        iyz="-0.00108797206479575"
+        izz="0.0436769339698879" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_0"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="30"
+      velocity="1.5" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.00812047588913298 -0.140182843002606 -0.0353110730906479"
+        rpy="0 0 0" />
+      <mass
+        value="2.46910484410219" />
+      <inertia
+        ixx="0.0472802430834299"
+        ixy="-0.000467320608725399"
+        ixz="8.39426484904716E-05"
+        iyy="0.00164580689436975"
+        iyz="0.00021577011321666"
+        izz="0.0481792917477871" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0.15 0 0.244"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.2"
+      upper="1.2"
+      effort="25"
+      velocity="1.5" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0346150099241614 -0.0385370325612423 0.0261599585531351"
+        rpy="0 0 0" />
+      <mass
+        value="3.4902467058445" />
+      <inertia
+        ixx="0.00476815328736596"
+        ixy="0.000780820426061056"
+        ixz="-0.000222298208238949"
+        iyy="0.0169017321598886"
+        iyz="0.000333779552471874"
+        izz="0.0179533453502193" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 -0.35 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.2"
+      upper="1.2"
+      effort="20"
+      velocity="1.5" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.0583464412050314 -1.11022302462516E-16 -0.00249999999999998"
+        rpy="0 0 0" />
+      <mass
+        value="1.64450582321899" />
+      <inertia
+        ixx="0.0015115843982476"
+        ixy="1.1089152357947E-19"
+        ixz="9.83318683980247E-21"
+        iyy="0.00576177470136042"
+        iyz="2.91216193389991E-11"
+        izz="0.00532602138543279" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.359 -0.045 0.0305"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="15"
+      velocity="1.5" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-2.08166817117217E-17 -1.11022302462516E-16 0.059477422323749"
+        rpy="0 0 0" />
+      <mass
+        value="0.857437810056887" />
+      <inertia
+        ixx="0.000889158537287788"
+        ixy="-5.30597948849179E-21"
+        ixz="9.05220317431505E-20"
+        iyy="0.000881358882312492"
+        iyz="2.49579062044457E-19"
+        izz="0.000599180291395537" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.1"
+      upper="0"
+      effort="10"
+      velocity="2" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 0.110284466974595 6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.206343785625116" />
+      <inertia
+        ixx="0.000102780073415807"
+        ixy="-1.25410111519749E-20"
+        ixz="-1.24728047564055E-20"
+        iyy="0.000108455430202857"
+        iyz="-1.0827958230935E-20"
+        izz="8.64120673419005E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="5"
+      velocity="2" />
+  </joint>
+  <link
+    name="gripper_link_left">
+    <inertial>
+      <origin
+        xyz="-0.0136210487577759 -0.0528594674502312 2.22044604925031E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.105556079440397" />
+      <inertia
+        ixx="0.000126051002179615"
+        ixy="-1.77350727908083E-05"
+        ixz="-1.21723182975068E-21"
+        iyy="1.21193486257544E-05"
+        iyz="-6.98475345015871E-21"
+        izz="0.000132582987027864" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/gripper_link_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/gripper_link_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_joint_left"
+    type="revolute">
+    <origin
+      xyz="0 0.12689 0.04081"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="gripper_link_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.5"
+      upper="0"
+      effort="5"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="gripper_link_rigth">
+    <inertial>
+      <origin
+        xyz="0.0136210487577759 -0.0528594674502312 1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.105556079440397" />
+      <inertia
+        ixx="0.000126051002179615"
+        ixy="1.77350727908083E-05"
+        ixz="4.16976449338841E-21"
+        iyy="1.21193486257544E-05"
+        iyz="-1.12200761897173E-20"
+        izz="0.000132582987027864" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/gripper_link_rigth.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot Armel bueno/meshes/gripper_link_rigth.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_joint_rigth"
+    type="revolute">
+    <origin
+      xyz="0 0.12689 -0.04081"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="gripper_link_rigth" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.6"
+      upper="0"
+      effort="5"
+      velocity="0.05" />
+  </joint>
+</robot>
